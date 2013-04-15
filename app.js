@@ -30,6 +30,11 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 app.get('/users', user.list);
 app.get('/user/:username', user.user);
+app.get('/login', routes.login);
+app.get('/logout', routes.logout);
+app.get('/reg', routes.reg);
+app.get('/post', routes.post);
+
 
 
 http.createServer(app).listen(app.get('port'), function(){
