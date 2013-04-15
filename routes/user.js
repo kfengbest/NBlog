@@ -4,5 +4,9 @@
  */
 
 exports.list = function(req, res){
-  res.send("respond with a resource");
+  res.send("Here we should list all the users.");
 };
+
+exports.user = function(req, res){
+	res.send('user:' + req.params.username);
+}
