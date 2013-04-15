@@ -8,7 +8,7 @@ exports.index = function(req, res){
 };
 
 exports.login = function(req, res){
-	res.send("login page");
+  res.render('login', { title: 'Neutron' });
 }
 
 exports.doLogin = function(req, res){
